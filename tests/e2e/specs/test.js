@@ -23,12 +23,7 @@ describe('My First Test', () => {
     cy.get("div.accent--text").contains(`${mm} ${yy}`).click({ force: true });
 
   });
-  it("move to new website", () => {
-    cy.origin('https://google.com', () => {
-  cy.visit('https://google.com/')
-
-})
-  })
+  
   
 })
 
