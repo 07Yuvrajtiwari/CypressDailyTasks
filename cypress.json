@@ -1,4 +1,5 @@
 {
   "pluginsFile": "tests/e2e/plugins/index.js",
-  "baseUrl" : "https://dev.kpmgsofy.com"
+  "baseUrl" : "https://dev.kpmgsofy.com",
+  "experimentalSessionAndOrigin": true
 }

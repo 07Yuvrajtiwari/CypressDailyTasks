@@ -5,7 +5,7 @@ describe('My First Test', () => {
   beforeEach(() => {
     cy.visit("/login");
     cy.get("[data-test='Username']").clear().type("ASHISH@developer.com");
-    cy.get("[data-test='Password']").clear().type("Argus@1234");
+    cy.get("[data-test='Password']").clear().type("Argus@12345");
     cy.get("[data-test='login-btn']").click();
   });
   it("move_to_next", () => {
@@ -21,11 +21,14 @@ describe('My First Test', () => {
     cy.wait(6000);
     cy.get('[data-test="date-filter-title"]').click();
     cy.get("div.accent--text").contains(`${mm} ${yy}`).click({ force: true });
-    cy.get("div.accent--text").contains(`${yy}`).click( );
-    cy.get(`li`).contains(`${year}`).click();
-    cy.get(".v-btn__content").contains(`${month}`).click();
-    cy.get(".v-btn__content").contains(`${day}`).click();
-    cy.get(".v-btn__content").contains("Apply").click();
+
   });
+  it("move to new website", () => {
+    cy.origin('https://google.com', () => {
+  cy.visit('https://google.com/')
+
+})
+  })
   
 })
+
