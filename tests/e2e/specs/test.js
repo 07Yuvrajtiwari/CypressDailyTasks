@@ -27,4 +27,5 @@ describe('My First Test', () => {
     cy.get(".v-btn__content").contains(`${day}`).click();
     cy.get(".v-btn__content").contains("Apply").click();
   });
+  
 })
