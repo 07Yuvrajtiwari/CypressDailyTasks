@@ -7,7 +7,9 @@
     "build": "vue-cli-service build",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "test:cypress": "cypress run",
+    "generate:report": "cucumber-html-reporter -o report/cucumber_report.html -i cypress/reports/cucumber-report.json"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -23,6 +25,7 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "cucumber-html-reporter": "^7.1.1",
     "cypress": "^9.7.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3"
