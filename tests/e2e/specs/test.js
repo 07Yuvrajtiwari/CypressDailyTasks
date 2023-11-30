@@ -23,14 +23,7 @@ describe('My First Test', () => {
     cy.get("div.accent--text").contains(`${mm} ${yy}`).click({ force: true });
 
   });
-  it ("move-to-the-next-site", () => {
-    cy.origin('https://google.com', () => {
-  cy.visit('https://www.google.com/')
-  cy.get("[aria-label='Sign in']").contains('Sign in').click();
   
-})
-    
-  })
   
   
 })
