@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint",
     "cypress:run": "cypress run",
     "test:cypress": "cypress run",
-    "generate:report": "cucumber-html-reporter -o reports/cucumber-html-report.html -i cucumber-report.json"
+    "generate:report": "npx cucumber-html-reporter -o reports/cucumber-html-report.html -i cucumber-report.json"
   },
   "dependencies": {
     "core-js": "^3.8.3",
