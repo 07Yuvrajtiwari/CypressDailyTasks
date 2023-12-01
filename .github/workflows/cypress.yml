@@ -26,4 +26,13 @@ jobs:
 
       - name: Run Cypress Tests
         run: npm run cypress:run
- 
+
+      - name: Generate Cucumber HTML report
+        run: npx multiple-cucumber-html-reporter
+  
+      - name: Upload Cucumber HTML report as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-report
+          path: cypress/reports/cucumber-html-report
+

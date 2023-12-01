@@ -1,0 +1,11 @@
+{
+    "jsonOutputFile": "cypress/reports/cucumber-json.json",
+    "reportName": "Cypress Cucumber Test Report",
+    "outputDirectory": "reports/cucumber-html-report",
+    "theme": "bootstrap",
+    "metadata": {
+      "browser": "chrome",
+      "platform": "ubuntu-latest"
+    }
+  }
+  

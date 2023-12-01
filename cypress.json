@@ -1,5 +1,9 @@
 {
   "pluginsFile": "tests/e2e/plugins/index.js",
   "baseUrl" : "https://dev.kpmgsofy.com",
-  "experimentalSessionAndOrigin": true
+  "experimentalSessionAndOrigin": true,
+  "postprocessor": "multiple-cucumber-html-reporter",
+  "cucumber-report": {
+    "config": "cucumber-report.json"
+  }
 }
