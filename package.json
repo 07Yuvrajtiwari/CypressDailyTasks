@@ -9,11 +9,12 @@
     "lint": "vue-cli-service lint",
     "cypress:run": "cypress run",
     "test:cypress": "cypress run",
-    "generate:report": "node_modules/.bin/cucumber-js -o reports/cucumber-html-report.html -i cucumber-report.json"
+    "generate:report": "node_modules/.bin/cucumber -o reports/cucumber-html-report.html -i cucumber-report.json"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "cypress": "^13.6.0",
+    "node": "^16.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
