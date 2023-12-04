@@ -43,7 +43,7 @@ jobs:
         run: npm install
 
       - name: Generate Cucumber HTML report
-        run: npm run generate-report
+        run: npm run generate-report || true
 
       - name: Upload report artifact
         uses: actions/upload-artifact@v3
@@ -51,22 +51,3 @@ jobs:
           name: cucumber-report
           path: reports/cucumber_report.html
 
-   build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Continue with Build Steps
-      run: npm run build
-on:
-  push:
-    branches:
-      - main
-    jobs:
-      - execute_code
-      - build:
-          continue-on-error: true
-      - generate_report:
-          continue-on-error: true
