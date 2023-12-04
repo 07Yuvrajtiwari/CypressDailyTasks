@@ -50,3 +50,23 @@ jobs:
         with:
           name: cucumber-report
           path: reports/cucumber_report.html
+
+   build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Continue with Build Steps
+      run: npm run build
+on:
+  push:
+    branches:
+      - main
+    jobs:
+      - execute_code
+      - build:
+          continue-on-error: true
+      - generate_report:
+          continue-on-error: true
