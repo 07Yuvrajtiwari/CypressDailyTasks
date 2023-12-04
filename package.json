@@ -11,7 +11,7 @@
     "test:cypress": "cypress run",
     
     "report": "node report.js",
-    "generate:report": "npx cucumber-html-reporter -o reports/cucumber-html-report.html -i cucumber-report.json"
+    "generate-report":  "npx node_modules/cucumber-html-reporter -o reports/cucumber-html-report.html -i cucumber-report.json"
   },
   "dependencies": {
     "core-js": "^3.8.3",
