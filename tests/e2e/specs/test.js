@@ -4,8 +4,8 @@ describe('My First Test', () => {
  
   beforeEach(() => {
     cy.visit("/login");
-    cy.get("[data-test='Username']").clear().type("ASHISH@developer.com");
-    cy.get("[data-test='Password']").clear().type("Argus@12345");
+    cy.get("[data-test='Username']").clear().type("");
+    cy.get("[data-test='Password']").clear().type("");
     cy.get("[data-test='login-btn']").click();
   });
   it("move_to_next", () => {
