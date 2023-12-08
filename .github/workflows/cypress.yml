@@ -25,6 +25,8 @@ jobs:
         run: npm install
 
       - name: Run Cypress Tests
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: npm run cypress:run
 
   report:
