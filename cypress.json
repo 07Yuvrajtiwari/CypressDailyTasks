@@ -5,6 +5,9 @@
   "postprocessor": "cucumber-html-reporter",
   "cucumber-report": {
     "config": "cucumber-report.json"
+  },
+  "env": {
+    "GITHUB_TOKEN": Cypress.env("GITHUB_TOKEN")
   }
 }
 
